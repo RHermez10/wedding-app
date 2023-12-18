@@ -21,7 +21,7 @@ const SignUp = (): ReactElement => {
         // SIGNUP POST REQUEST
         try {
             // make request using provided credentials
-            const response: Response = await fetch('http://localhost:1337/accounts/signup', {
+            const response: Response = await fetch('https://wedding-app-fmvx.onrender.com/accounts/signup', {
                 method: "POST",
                 body: JSON.stringify(account),
                 headers: { "Content-Type": "application/json" },

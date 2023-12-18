@@ -66,7 +66,7 @@ export const savePhoto = async (photoRef: React.RefObject<HTMLCanvasElement>): P
 
     // and make POST-request to server with above photo object
     try {
-        const response: Response = await fetch('http://localhost:1337/gallery', {
+        const response: Response = await fetch('https://wedding-app-fmvx.onrender.com/gallery', {
             method: "POST",
             body: JSON.stringify(photoObj),
             headers: { "Content-Type": "application/json" },

@@ -1,7 +1,7 @@
 // GET request depending on user
 export const fetchUserPhotos = async (user: string | null) => {
 
-    const response = await fetch('http://localhost:1337/gallery', {
+    const response = await fetch('https://wedding-app-fmvx.onrender.com/gallery', {
         method: "GET",
         headers: { "Authorization": `Bearer ${user}` },
     });
@@ -15,7 +15,7 @@ export const fetchUserPhotos = async (user: string | null) => {
 export const deletePhoto = async (_id: string | undefined) => {
 
     try {
-        const response = await fetch('http://localhost:1337/gallery', {
+        const response = await fetch('https://wedding-app-fmvx.onrender.com/gallery', {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({id: _id}),

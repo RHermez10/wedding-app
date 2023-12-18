@@ -17,7 +17,7 @@ const Login = (): ReactElement => {
 
         // LOGIN POST REQUEST
         try {
-            const response = await fetch('http://localhost:1337/accounts/login', {
+            const response = await fetch('https://wedding-app-fmvx.onrender.com/accounts/login', {
                 method: "POST",
                 body: JSON.stringify(account),
                 headers: { "Content-Type": "application/json" },
